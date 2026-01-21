@@ -1,8 +1,137 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>PAH Lab</title></head>
-  <body>
-    <h1>Physical Activity and Health Laboratory</h1>
-    <p>It works!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Physical Activity and Health Laboratory</title>
+  <meta name="description" content="The Physical Activity and Health Laboratory advances evidence-based, technology-enhanced physical activity interventions to support health across the lifespan." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>Physical Activity &amp; Health Lab</span>
+        </a>
+
+        <div class="navlinks">
+          <a class="active" href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="latest-news.html">Latest News</a>
+          <a href="about.html">About Us</a>
+          <a href="publications.html">Publications</a>
+          <a href="join.html">Join the Lab</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="kicker">Physical Activity • Health • Technology</div>
+
+        <div class="hero-grid">
+          <div>
+            <h1 class="hero-title">
+              <span>Empirically grounded</span>
+              <span>Human centered</span>
+              <span>Movement driven</span>
+            </h1>
+
+            <p class="hero-text">
+              The Physical Activity and Health Laboratory advances evidence based, technology enhanced physical activity interventions
+              to support physical and psychological health across the lifespan.
+              Our work spans children, young adults, and older adults.
+            </p>
+
+            <div class="cta-row">
+              <!-- “Our Science” button jumps to Research page -->
+              <a class="btn btn-primary" href="research.html">Our Science →</a>
+              <a class="btn" href="join.html">Join the Lab</a>
+            </div>
+
+            <p class="small" style="margin-top:10px;">
+              Based at the University of Michigan, Ann Arbor.
+            </p>
+          </div>
+
+          <!-- Right-side card: 公告栏 preview -->
+          <aside class="card" aria-label="Bulletin">
+            <h3>公告栏</h3>
+            <div class="notice">
+              <div class="notice-item">
+                <div class="meta">Announcement</div>
+                <div>
+                  Dr. Chen is guest editor of an upcoming special issue of <em>Healthcare</em>:
+                  “Exercise Science and Health Promotion.” Submission deadline is <strong>May 20, 2026</strong>.
+                  <a href="#" title="Add the real link later">Details</a>.
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bulletin section (full-width) -->
+    <section class="section" aria-label="Bulletin board">
+      <div class="container">
+        <h2 class="section-title">公告栏</h2>
+
+        <div class="notice">
+          <div class="notice-item">
+            <div class="meta">2026 • Special Issue</div>
+            <div>
+              Dr. Chen is guest editor of an upcoming special issue of <em>Healthcare</em>:
+              “Exercise Science and Health Promotion.” Submission deadline is <strong>May 20, 2026</strong>.
+              <a href="#" title="Add the real link later">Details</a>.
+            </div>
+          </div>
+
+          <!-- Add more notices like this -->
+          <!--
+          <div class="notice-item">
+            <div class="meta">2026 • Lab Update</div>
+            <div>We’re recruiting research assistants for Spring/Summer 2026. <a href="join.html">Learn more</a>.</div>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Physical Activity &amp; Health Laboratory</strong><br/>
+          <span class="small">Empirically grounded • Human centered • Movement driven</span>
+        </div>
+        <div>
+          <strong>Address</strong><br/>
+          SKB4250<br/>
+          830 North University<br/>
+          Ann Arbor, MI 48109-1048<br/>
+          United States
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:14px;">
+        © <span id="year"></span> Physical Activity &amp; Health Lab • Built with GitHub Pages
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
 </html>
