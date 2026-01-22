@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research | Physical Activity and Health Lab</title>
+  <title>About Us | Physical Activity and Health Lab</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html"><span class="brand-badge"></span><span>Physical Activity &amp; Health Lab</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Home">
+          <img src="lab_logo.png" alt="Physical Activity & Health Laboratory" class="brand-logo" />
+        </a>
+
         <div class="navlinks">
-          <a href="index.html">Home</a>
           <a href="research.html">Research</a>
           <a href="latest-news.html">Latest News</a>
-          <a class="active" href="about.html">About Us</a>
+          <a href="about.html" class="active">About Us</a>
           <a href="publications.html">Publications</a>
-          <a href="join.html">Join the Lab</a>
+          <a class="nav-btn" href="join.html">JOIN THE LAB</a>
         </div>
       </nav>
     </div>
@@ -25,22 +27,45 @@
 
   <main class="section">
     <div class="container">
-      <h1 class="hero-title" style="font-size:34px;">Research</h1>
+      <h1 class="hero-title" style="font-size:34px;">About Us</h1>
       <p class="hero-text">
-        Add your latest news areas here (e.g., technology-enhanced interventions, lifespan physical activity, mental health, etc.).
+        Meet our team and learn about our mission to advance physical activity research.
       </p>
 
       <div class="card" style="margin-top:16px;">
-        <h3>Research Areas</h3>
-        <p>• Area 1<br/>• Area 2<br/>• Area 3</p>
+        <h3>Team Members</h3>
+        <p>• Member 1<br/>• Member 2<br/>• Member 3</p>
       </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="small">Return to <a href="index.html">Home</a>.</div>
+      <div class="footer-grid">
+        <div>
+          <strong>Physical Activity &amp; Health Laboratory</strong><br/>
+          <span class="small">Empirically grounded • Human centered • Movement driven</span>
+        </div>
+        <div>
+          <strong>Address</strong><br/>
+          SKB4250<br/>
+          830 North University<br/>
+          Ann Arbor, MI 48109-1048<br/>
+          United States
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="small">
+          © <span id="year"></span> Physical Activity &amp; Health Lab • Built with GitHub Pages
+        </div>
+        <img src="umich_logo.svg" alt="University of Michigan" class="umich-logo" />
+      </div>
     </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>
