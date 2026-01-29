@@ -57,9 +57,9 @@ a:hover{ text-decoration: underline; }
   gap:10px;
 }
 .brand-logo{
-  height: 160px;
+  height: 200px;
   width: auto;
-  max-width: 350px;
+  max-width: 420px;
   flex-shrink: 0;
   object-fit: contain;
 }
@@ -324,16 +324,23 @@ a:hover{ text-decoration: underline; }
 .footer{
   margin-top: 40px;
   background: #3a5a7b;
-  padding: 50px 0;
+  padding: 5px 0 50px;
   color: #d0e0f0;
   font-size: 14px;
 }
 
 .footer-grid{
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   gap: 40px;
   align-items: start;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
 }
 
 .footer-left{
@@ -342,24 +349,39 @@ a:hover{ text-decoration: underline; }
   gap: 20px;
 }
 
-.footer-logo img{
-  height: 45px;
-  width: auto;
-}
-
-.footer-links{
+.footer-logos{
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 
-.footer-links a{
-  color: #fff;
-  text-decoration: underline;
-  font-size: 13px;
+.footer-logos a{
+  display: block;
 }
-.footer-links a:hover{
-  color: #FFCB05;
+
+.footer-logo-img{
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer-logo-umich{
+  height: 125px;
+}
+
+.footer-logo-kines{
+  height: 45px;
+}
+
+.footer-logo-img:hover{
+  opacity: 1;
+}
+
+.footer-contact{
+  margin-left: auto;
+  text-align: right;
+  padding-top: 20px;
 }
 
 .footer-section{
