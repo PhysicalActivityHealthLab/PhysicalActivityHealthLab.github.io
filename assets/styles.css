@@ -388,7 +388,7 @@ a:hover{ text-decoration: underline; }
 /* Footer */
 .footer{
   margin-top: 40px;
-  background: #3a5a7b;
+  background: #5a7a9b;
   padding: 5px 0 50px;
   color: #d0e0f0;
   font-size: 14px;
@@ -426,7 +426,7 @@ a:hover{ text-decoration: underline; }
 
 .footer-logo-img{
   width: auto;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
   opacity: 0.9;
   transition: opacity 0.2s;
 }
